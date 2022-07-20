@@ -1,7 +1,7 @@
 package com.designpatterns.Singleton.EagerInit;
 
 public class BookISBN {
-    private static volatile BookISBN bookISBN = new BookISBN();
+    private static final BookISBN bookISBN = new BookISBN();
 
     private BookISBN() {
 
