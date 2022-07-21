@@ -4,7 +4,7 @@ public class CarpentryTelescopic1 {
     String framing;
     String roofing;
     String shipCarpentry;
-    String CabinetCarpentry;
+    String cabinetCarpentry;
 
     public CarpentryTelescopic1(String framing) {
         this.framing = framing;
@@ -20,9 +20,9 @@ public class CarpentryTelescopic1 {
         this.shipCarpentry = shipCarpentry;
     }
 
-    public CarpentryTelescopic1(String framing, String roofing, String shipCarpentry, String CabinetCarpentry) {
+    public CarpentryTelescopic1(String framing, String roofing, String shipCarpentry, String cabinetCarpentry) {
         this(framing, roofing, shipCarpentry);
-        this.CabinetCarpentry = CabinetCarpentry;
+        this.cabinetCarpentry = cabinetCarpentry;
     }
 
     @Override
@@ -31,7 +31,7 @@ public class CarpentryTelescopic1 {
                 "framing='" + framing + '\'' +
                 ", roofing=" + roofing +
                 ", shipCarpentry='" + shipCarpentry + '\'' +
-                ", CabinetCarpentry='" + CabinetCarpentry + '\'' +
+                ", cabinetCarpentry='" + cabinetCarpentry + '\'' +
                 '}';
     }
 }

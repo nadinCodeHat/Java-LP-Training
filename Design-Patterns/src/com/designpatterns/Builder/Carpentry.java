@@ -4,20 +4,20 @@ public class Carpentry {
     private final String framing;
     private final String roofing;
     private final String shipCarpentry;
-    private final String CabinetCarpentry;
+    private final String cabinetCarpentry;
 
     public Carpentry(Builder builder) {
         this.framing = builder.framing;
         this.roofing = builder.roofing;
         this.shipCarpentry = builder.shipCarpentry;
-        this.CabinetCarpentry = builder.CabinetCarpentry;
+        this.cabinetCarpentry = builder.cabinetCarpentry;
     }
 
     static class Builder {
         private String framing;
         private String roofing;
         private String shipCarpentry;
-        private String CabinetCarpentry;
+        private String cabinetCarpentry;
 
         public Carpentry build() {
             return new Carpentry(this);
@@ -37,8 +37,8 @@ public class Carpentry {
             return this;
         }
 
-        public Builder CabinetCarpentry(String CabinetCarpentry) {
-            this.CabinetCarpentry = CabinetCarpentry;
+        public Builder CabinetCarpentry(String cabinetCarpentry) {
+            this.cabinetCarpentry = cabinetCarpentry;
             return this;
         }
     }
@@ -49,7 +49,7 @@ public class Carpentry {
                 "framing='" + framing + '\'' +
                 ", roofing=" + roofing +
                 ", shipCarpentry='" + shipCarpentry + '\'' +
-                ", CabinetCarpentry='" + CabinetCarpentry + '\'' +
+                ", cabinetCarpentry='" + cabinetCarpentry + '\'' +
                 '}';
     }
 }
