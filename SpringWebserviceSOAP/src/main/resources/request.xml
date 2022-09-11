@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://www.webservicesoap.org/birthday">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:getBirthdayRequest>
+            <us:day>9</us:day>
+            <us:month>11</us:month>
+            <us:year>2001</us:year>
+        </us:getBirthdayRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
