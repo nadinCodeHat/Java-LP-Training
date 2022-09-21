@@ -26,12 +26,12 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
-      DBHOSTNAME: 'student-service.cluster-c7y0pk8jzj2i.us-east-1.rds.amazonaws.com',
-      DBPORT: '5432',
-      DBNAME: 'studentdb',
-      DBUSERNAME: 'postgres',
-      DBPASSWORD: 'Nadin321',
-      DBSCHEMA: 'public',
+      DBHOSTNAME: '${ssm:/techsolutions/student-service/${sls:stage}/database/pg/hostname}',
+      DBPORT: '${ssm:/techsolutions/student-service/${sls:stage}/database/pg/port}',
+      DBNAME: '${ssm:/techsolutions/student-service/${sls:stage}/database/pg/database}',
+      DBUSERNAME: '${ssm:/techsolutions/student-service/${sls:stage}/database/pg/username}',
+      DBPASSWORD: '${ssm:/techsolutions/student-service/${sls:stage}/database/pg/password}',
+      DBSCHEMA: '${ssm:/techsolutions/student-service/${sls:stage}/database/pg/schema}',
     },
   },
   // import the function via paths
