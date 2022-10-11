@@ -1,0 +1,92 @@
+[
+  {
+    "id:": 1,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Sunglasses&hairColor=Platinum&facialHairType=Blank&facialHairColor=Platinum&clotheType=BlazerShirt&clotheColor=Heather&graphicType=Selena&eyeType=Dizzy&eyebrowType=SadConcernedNatural&mouthType=Tongue&skinColor=Yellow",
+    "firstName": "Hutchinson",
+    "lastName": "Snyder",
+    "degreeProgram": "Software Engineering",
+    "gpa": 3.32,
+    "assignmentProgress": 39
+  },
+  {
+    "id:": 2,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Round&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=Platinum&clotheType=Hoodie&clotheColor=Blue01&eyeType=Happy&eyebrowType=SadConcerned&mouthType=Sad&skinColor=Black",
+    "firstName": "Charlene",
+    "lastName": "Potter",
+    "degreeProgram": "Law",
+    "gpa": 3.12,
+    "assignmentProgress": 56
+  },
+  {
+    "id": 3,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairCurly&accessoriesType=Sunglasses&hairColor=Platinum&facialHairType=Blank&facialHairColor=BlondeGolden&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Bat&eyeType=Wink&eyebrowType=UpDownNatural&mouthType=Concerned&skinColor=Brown",
+    "firstName": "Wilkinson",
+    "lastName": "Freeman",
+    "degreeProgram": "Mechanical Engineering",
+    "gpa": 3.62,
+    "assignmentProgress": 39
+  },
+  {
+    "id": 4,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairShavedSides&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=Blank&clotheType=GraphicShirt&clotheColor=Black&graphicType=Bear&eyeType=Close&eyebrowType=UpDown&mouthType=Vomit&skinColor=Pale",
+    "firstName": "Jody",
+    "lastName": "Ortega",
+    "degreeProgram": "Management",
+    "gpa": 2.9,
+    "assignmentProgress": 96
+  },
+  {
+    "id": 5,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraightStrand&accessoriesType=Blank&hairColor=Red&facialHairType=MoustacheMagnum&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=PastelBlue&graphicType=Cumbia&eyeType=Cry&eyebrowType=UpDown&mouthType=Serious&skinColor=DarkBrown",
+    "firstName": "Jarvis",
+    "lastName": "Whitley",
+    "degreeProgram": "Computer Science",
+    "gpa": 2.87,
+    "assignmentProgress": 76
+  },
+  {
+    "id": 6,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=WinterHat3&accessoriesType=Kurt&hatColor=Gray01&hairColor=PastelPink&facialHairType=MoustacheMagnum&facialHairColor=BlondeGolden&clotheType=ShirtScoopNeck&clotheColor=Gray02&eyeType=Side&eyebrowType=DefaultNatural&mouthType=Sad&skinColor=Brown",
+    "firstName": "Carolina",
+    "lastName": "Owen",
+    "degreeProgram": "Mechanical Engineering",
+    "gpa": 3.86,
+    "assignmentProgress": 60
+  },
+  {
+    "id": 7,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesar&accessoriesType=Prescription02&hatColor=Blue02&hairColor=Red&facialHairType=BeardMajestic&facialHairColor=Auburn&clotheType=BlazerSweater&clotheColor=Red&eyeType=Default&eyebrowType=UpDown&mouthType=Grimace&skinColor=DarkBrown",
+    "firstName": "Beck",
+    "lastName": "Holland",
+    "degreeProgram": "Management",
+    "gpa": 2.87,
+    "assignmentProgress": 28
+  },
+  {
+    "id": 8,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairFroBand&accessoriesType=Wayfarers&hairColor=Auburn&facialHairType=MoustacheFancy&facialHairColor=Platinum&clotheType=GraphicShirt&clotheColor=PastelRed&graphicType=Pizza&eyeType=Squint&eyebrowType=SadConcernedNatural&mouthType=Smile&skinColor=Pale",
+    "firstName": "Margret",
+    "lastName": "Maldonado",
+    "degreeProgram": "Law",
+    "gpa": 3.42,
+    "assignmentProgress": 87
+  },
+  {
+    "id": 9,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads02&accessoriesType=Blank&hairColor=Blue&facialHairType=Blank&facialHairColor=Blonde&clotheType=Hoodie&clotheColor=Heather&graphicType=Pizza&eyeType=Surprised&eyebrowType=AngryNatural&mouthType=Sad&skinColor=Light",
+    "firstName": "Monroe",
+    "lastName": "Vargas",
+    "degreeProgram": "Computer Science",
+    "gpa": 3.65,
+    "assignmentProgress": 45
+  },
+  {
+    "id": 10,
+    "icon": "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairFrizzle&accessoriesType=Blank&hairColor=PastelPink&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=ShirtScoopNeck&clotheColor=Gray01&eyeType=Side&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=DarkBrown",
+    "firstName": "Agnes",
+    "lastName": "Sargent",
+    "degreeProgram": "Software Engineering",
+    "gpa": 2.89,
+    "assignmentProgress": 54
+  }
+]

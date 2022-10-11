@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        {{ title }} <br />
+        {{ message }}
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2">Degree Program Filter:</div>
+          <div class="col-md-4">
+            <input type="text" [(ngModel)]="degreeProgramFilter" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h6>Filtered by : {{ degreeProgramFilter }}</h6>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table" *ngIf="students.length">
+            <thead>
+              <tr>
+                <th>
+                  <button class="btn btn-primary" (click)="toggleAvatar()">
+                    {{ showIcon ? "Hide" : "Show" }} Avatar
+                  </button>
+                </th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Degree program</th>
+                <th>GPA</th>
+                <th>Assignment progress</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let student of filteredStudents">
+                <td>
+                  <img [src]="student.icon" *ngIf="showIcon" width="60rem" />
+                </td>
+                <td>{{ student.firstName }}</td>
+                <td>{{ student.lastName }}</td>
+                <td>{{ student.degreeProgram }}</td>
+                <td>{{ student.gpa }}</td>
+                <td>
+                  <lms-progress-bar
+                    [progress]="student.assignmentProgress"
+                    [firstName]="student.firstName"
+                    (progessClick)="onMessageRecieved($event)"
+                  ></lms-progress-bar>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
