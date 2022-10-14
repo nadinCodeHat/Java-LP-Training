@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 
@@ -9,6 +7,11 @@ import { ProgressBarComponent } from './shared/progress-bar/progress-bar.compone
 import { HomeComponent } from './home/home/home.component';
 import { RouterModule } from '@angular/router';
 import { CreateStudentGuard } from './students/create-student.guard';
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
+import { initializeKeycloak } from './auth/app.util';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AuthGuard } from './auth/keycloak.guard';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,19 @@ import { CreateStudentGuard } from './students/create-student.guard';
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: 'students', component: StudentsComponent },
+      { path: 'students', component: StudentsComponent, canActivate: [AuthGuard] },
       { path: 'students/:id', component: StudentsComponent, canActivate: [CreateStudentGuard] },
       { path: 'home', component: HomeComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' }
-    ])
+    ]),
+    KeycloakAngularModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_INITIALIZER,
+    useFactory: initializeKeycloak,
+    multi: true,
+    deps: [KeycloakService]
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

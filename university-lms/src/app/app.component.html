@@ -29,7 +29,7 @@
     <div class="message mr-4" *ngIf="fullName">Welcome : {{ fullName }}</div>
     <ul class="navbar-nav mr-4" *ngIf="fullName">
       <li class="nav-item">
-        <a class="nav-link">Logout</a>
+        <a class="nav-link" (click)="logout()">Logout</a>
       </li>
     </ul>
   </nav>
